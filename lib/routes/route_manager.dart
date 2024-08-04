@@ -16,18 +16,10 @@ class RouteManager {
     return GoRouter(
       navigatorKey: parentNavigatorKey,
       debugLogDiagnostics: true,
-      // initialLocation: Routes.splash.path,
+      initialLocation: Routes.splash.path,
       // initialLocation: "${Routes.splash.path}?id=1",
-      initialLocation: Routes.pokemonDetails.path.replaceAll(":id", "1"),
+      // initialLocation: Routes.pokemonDetails.path.replaceAll(":id", "1"),
       // initialLocation: "/wrong-route/3",
-      redirect: (context, state) {
-        // deeplink route
-        if (state.uri.pathSegments.contains("pokemon-scanned")) {
-          final id = state.uri.pathSegments.last;
-          return "${Routes.splash.path}?id=$id";
-        }
-        return null;
-      },
       errorPageBuilder: (context, state) {
         return getPage(state: state, child: const NotFoundPage());
       },
@@ -36,6 +28,13 @@ class RouteManager {
   }
 
   static final routes = <GoRoute>[
+    GoRoute(
+      path: "/pokemon-scanned/:id",
+      redirect: (context, state) {
+        final String? id = state.uri.queryParameters["id"];
+        return "${Routes.splash.path}?id=$id";
+      },
+    ),
     GoRoute(
       path: Routes.splash.path,
       pageBuilder: (context, state) {

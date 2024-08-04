@@ -1,16 +1,12 @@
 # pokedex
 
-A new Flutter project.
+## POKEDEX DeepLinks
+### Testing in Android
+adb shell am start -a android.intent.action.VIEW \
+  -c android.intent.category.BROWSABLE \
+  -d pd://poke.dex/pokemon-scanned/1 \
+  am.envise.enviseam
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Testing in IOS
+xcrun simctl openurl booted pd://poke.dex/pokemon-scanned/1
+search pd://poke.dex/pokemon-scanned/1 in safari
