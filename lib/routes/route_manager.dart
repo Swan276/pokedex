@@ -16,9 +16,9 @@ class RouteManager {
     return GoRouter(
       navigatorKey: parentNavigatorKey,
       debugLogDiagnostics: true,
-      initialLocation: Routes.splash.path,
+      // initialLocation: Routes.splash.path,
       // initialLocation: "${Routes.splash.path}?id=1",
-      // initialLocation: Routes.pokemonDetails.path.replaceAll(":id", "1"),
+      initialLocation: Routes.pokemonDetails.path.replaceAll(":id", "1"),
       // initialLocation: "/wrong-route/3",
       errorPageBuilder: (context, state) {
         return getPage(state: state, child: const NotFoundPage());

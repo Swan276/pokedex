@@ -28,6 +28,10 @@ class $AssetsImagesGen {
   AssetGenImage get charizard =>
       const AssetGenImage('assets/images/charizard.png');
 
+  /// File path: assets/images/pokeball.png
+  AssetGenImage get pokeball =>
+      const AssetGenImage('assets/images/pokeball.png');
+
   /// File path: assets/images/pokedex-logo.png
   AssetGenImage get pokedexLogo =>
       const AssetGenImage('assets/images/pokedex-logo.png');
@@ -49,6 +53,7 @@ class $AssetsImagesGen {
   /// List of all assets
   List<AssetGenImage> get values => [
         charizard,
+        pokeball,
         pokedexLogo,
         raichu,
         teamRocket,
