@@ -20,9 +20,9 @@ class PokemonTypeBadge extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(16),
       ),
-      child: const Text(
-        "Electric",
-        style: TextStyle(
+      child: Text(
+        type.displayName,
+        style: const TextStyle(
           fontSize: 14,
           color: Colors.white,
           fontWeight: FontWeight.bold,

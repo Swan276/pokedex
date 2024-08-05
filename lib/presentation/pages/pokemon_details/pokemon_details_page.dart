@@ -103,16 +103,16 @@ final pokemons = <String,
   ),
   "2": (
     "Charizard",
-    "0026",
-    "Mouse Pokémon",
+    "0006",
+    "Flame Pokémon",
     [PokemonTypes.fire, PokemonTypes.flying],
     Assets.images.charizard,
     const Color(0xFFF57D31)
   ),
   "3": (
     "Umbreon",
-    "0026",
-    "Mouse Pokémon",
+    "0197",
+    "Moonlight Pokémon",
     [PokemonTypes.dark],
     Assets.images.umbreon,
     const Color(0xFF212121)

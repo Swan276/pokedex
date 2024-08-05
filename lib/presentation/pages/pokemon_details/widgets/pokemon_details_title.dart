@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pokedex/constants/pokemon_types.dart';
 import 'package:pokedex/presentation/pages/pokemon_details/widgets/pokemon_type_badge.dart';
@@ -23,21 +22,21 @@ class PokemonDetailsTitle extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              "Raichu",
-              style: TextStyle(
+              name,
+              style: const TextStyle(
                 fontSize: 38,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
             Text(
-              "#0026",
-              style: TextStyle(
+              "#$entry",
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -45,11 +44,14 @@ class PokemonDetailsTitle extends StatelessWidget {
             ),
           ],
         ),
-        const Text(
-          "Mouse Pokémon",
-          style: TextStyle(
-            fontSize: 18,
-            color: Colors.white,
+        Padding(
+          padding: const EdgeInsets.only(left: 4),
+          child: Text(
+            description,
+            style: const TextStyle(
+              fontSize: 18,
+              color: Colors.white,
+            ),
           ),
         ),
         const SizedBox(height: 8),
