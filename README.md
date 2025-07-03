@@ -1,16 +1,6 @@
 # pokedex
 
-A new Flutter project.
+Pokemon Card Detection Mobile App using Flutter and NFC.
 
-## Getting Started
+https://github.com/user-attachments/assets/78c3d7d8-804c-4842-9ca0-9a4f96c36729
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
